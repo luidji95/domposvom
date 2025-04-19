@@ -1,0 +1,123 @@
+.header-main {
+  color: white;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-out;
+  z-index: 1;
+}
+.hamburger-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  cursor: pointer;
+
+  padding-left: 100px;
+  cursor: pointer;
+  width: 50px;
+}
+.hamburger-main:hover {
+  transform: scale(1.05) translateY(-2px);
+}
+.hamburger-main:hover .span-1 {
+  width: 28px;
+}
+
+.hamburger-main:hover .span-2 {
+  width: 20px;
+  transform: translateX(3px);
+}
+
+.hamburger-main:hover .span-3 {
+  width: 14px;
+  transform: translateX(6px);
+}
+.hamburger-span {
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-span:nth-child(1) {
+  width: 35px;
+}
+
+.hamburger-span:nth-child(2) {
+  width: 25px;
+}
+
+.hamburger-span:nth-child(3) {
+  width: 40px;
+}
+
+.home {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.home:hover {
+  color: whitesmoke;
+}
+
+.cart-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cart-icon {
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  padding-right: 100px;
+  /* background-color: red; */
+}
+.cart-icon:hover {
+  animation: pop-up 0.3s ease-in-out;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
+}
+@keyframes pop-up {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-4px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+.cart-count {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+.animate-header {
+  animation: dropInFromTop 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes dropInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

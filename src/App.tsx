@@ -1,15 +1,14 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import LandingPage from "./features/components/landingPage";
+import WhyChooseUs from "./features/components/WhyChooseUs";
+import ProductPage from "./features/products/ProductPage";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1>Dop po Svom</h1>
-      <img src="LandingPage" alt="opisslike" />
+      <LandingPage />
+      <WhyChooseUs />
+      <ProductPage />
     </>
   );
 }

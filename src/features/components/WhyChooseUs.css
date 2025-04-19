@@ -1,0 +1,30 @@
+.whychooseus-main {
+  padding: 4rem 2rem;
+  background-color: #f1eade;
+  text-align: center;
+}
+
+.whychooseus-title h3 {
+  font-size: 4rem;
+  margin-bottom: 6rem;
+  font-weight: 600;
+}
+
+.whychooseus-content {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.why-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.why-desc {
+  max-width: 250px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0 auto;
+}
